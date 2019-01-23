@@ -1,0 +1,24 @@
+{
+  "name": "portfolio-demo",
+  "version": "1.0.0",
+  "description": "portfolio v.01",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel src/index.html",
+    "build": "parcel build src/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tanamanda13/portfolio-demo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tanamanda13/portfolio-demo/issues"
+  },
+  "homepage": "https://github.com/tanamanda13/portfolio-demo#readme",
+  "devDependencies": {
+    "parcel-bundler": "^1.11.0",
+    "sass": "^1.16.1"
+  }
+}
