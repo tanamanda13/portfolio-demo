@@ -1,25 +1,95 @@
-
-body {
-  background-color: yellow;
+* {
+  box-sizing: border-box;
 }
 
-@media (max-width: 360px) {
+body {
+  background-color: var(--green-color);
+
+}
+
+@media (max-width: 800px) {
   body {
     // background-color: yellow;
-    background-image: url(../img/bananas.png);
+    background-color: var(--green-color);
   }
   
-  
-  .header__title {
+  .title {
     text-align: center;
-    color: rgb(255, 132, 132);
-  }
-
-  .container {
-    display: flex;
-
-    * {
-      color: var(--third-color);
+    font-family: 'Raleway', sans-serif;
+    position: absolute;
+    width: 200px;
+    // position: relative;
+    //border: 1px solid;
+    //margin-top: 6em;
+    //margin-top: 100px;
+    //width: 15em;
+    // position: absolute;
+    // top: 50%; 
+    // left: 50%; /* à 50%/50% du parent référent */
+    // transform: translate(-50%, 80%);
+    //top: 50%;
+    // display: flex;
+    // flex-direction: column;
+    // align-items: center;
+    // transform: translate(0, 20%);
+    .title--1 {
+    color: var(--green-color);
+    background-color: var(--white-color);
+    letter-spacing: 6px;
+    font-size: 1em;
+    position: absolute;
+    padding: 20px;
+    //margin: 0 auto;
+    width: 200px;
+    // top: -200%; 
+    // left: 25%; /* à 50%/50% du parent référent */
+    // transform: translate(0, 20%);
+    //top: 30.1vh;
+    top: 208px;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+ 
+    }
+    .title--2 {
+      color: var(--white-color);
+      border: 5px solid whitesmoke;
+      padding: 15px;
+      letter-spacing: 9.5px;
+      font-size: 1em;
+      position: absolute;
+      //top: 39.8vh;
+      top: 264px;
+      left: 50vw;
+      transform: translate(-50%, -50%);
     }
   }
+ 
+  .title__text {
+    font-family: linotype-vectora, sans-serif;
+    font-weight: 800;
+    //font-style: italic;
+    position: relative;
+    //position: absolute;
+    text-align: center;
+    top: 55vh;
+  }
+
+  .title__text--subtext {
+    font-family: linotype-vectora, sans-serif;
+    font-weight: 800;
+    font-style: italic;
+    font-size: 12px;
+  }
+
 }  
+
+// TYPOGRAPHY
+// @font-face {
+//   font-family: linotype-vectora, sans-serif;
+//   font-weight: 800;
+//   font-style: italic;
+// }
+
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700,800,900');
+
+
