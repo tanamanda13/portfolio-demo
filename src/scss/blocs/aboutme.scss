@@ -1,0 +1,19 @@
+.aboutMe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.aboutMe--photo {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+
+  position: relative;
+  top: 350px;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 10px solid var(--white-color);
+}
