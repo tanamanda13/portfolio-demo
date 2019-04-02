@@ -7,11 +7,7 @@ body {
 
 }
 
-@media (max-width: 800px) {
-  body {
-    // background-color: yellow;
-    background-color: var(--green-color);
-  }
+
   
   .title {
     text-align: center;
@@ -71,7 +67,8 @@ body {
     position: relative;
     //position: absolute;
     text-align: center;
-    top: 55vh;
+    //top: 55vh;
+    top: 310px;
   }
 
   .title__text--subtext {
@@ -81,7 +78,7 @@ body {
     font-size: 12px;
   }
 
-}  
+
 
 // TYPOGRAPHY
 // @font-face {
