@@ -35,6 +35,8 @@
 .aboutMe__text {
   display: none;
   position: relative;
+
+
 }
 
 
@@ -53,31 +55,44 @@
   justify-content: center;
   align-items: center;
 
-  
-}
+  color: var(--white-color);
 
-.cross__aboutMe {
-  border: 2px solid red;
-  z-index: 2000;
-  height: 200px;
-  .cross__aboutMe::before, .cross__aboutMe::after {
-    content:'';
-    position: absolute;
-    //background-color: black;
-    height: 20px;
-    z-index: 2000;
-    border: 2px solid black;
-    bottom: 20px;
-  
-    .cross__aboutMe::before {
-      transform: rotate(45deg);
-      
-    }
-    
-    .cross__aboutMe::after{
-      transform: rotate(-45deg);
-    }
+
+  & > span {
+    top: 220px;
+    color: var(--white-color);
+    border: 2px solid var(--white-color);
+    padding: 10px 20px;
+
   }
 
+  
 }
+
+// .cross__aboutMe {
+//   border: 2px solid red;
+//   z-index: 2000;
+//   height: 200px;
+//   .cross__aboutMe::before, .cross__aboutMe::after {
+//     content:'';
+//     position: absolute;
+//     //background-color: black;
+//     height: 20px;
+//     z-index: 2000;
+//     border: 2px solid black;
+//     bottom: 20px;
+  
+//     .cross__aboutMe::before {
+//       transform: rotate(45deg);
+      
+//     }
+    
+//     .cross__aboutMe::after{
+//       transform: rotate(-45deg);
+//     }
+//   }
+
+// }
+
+
 
