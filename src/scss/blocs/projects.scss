@@ -1,0 +1,25 @@
+.allProjects {
+  position: relative;
+  border: 2px solid red;
+  margin-top: 25px;
+  
+  & > p {
+    text-align: center;
+  }
+}
+
+.allProjects__grid {
+  position: relative;
+  border: 2px solid blue;
+  width: 80%;
+  margin: 0 auto;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  
+  & > .project {
+    background-color: #fff;
+
+    height: 200px;
+  }
+}
