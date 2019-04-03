@@ -12,7 +12,7 @@
     transform: skew(0deg, -13deg);
     position: relative;
 
-    box-shadow: 30px 10px 7px 8px rgba(66, 66, 66, 0.5);
+    box-shadow: 30px 10px 7px 8px var(--shadowRuban-color);
 
     &::after {
       content:'';
@@ -25,7 +25,7 @@
       top: -42.6px;
       transform: skew(0deg, 15deg);
 
-      z-index: -10;
+      //z-index: -10;
       //margin-top: 20px;
     }
 
