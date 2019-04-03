@@ -12,6 +12,7 @@ body {
   .title {
     text-align: center;
     font-family: 'Raleway', sans-serif;
+    font-weight: bold;
     position: absolute;
     width: 200px;
     // position: relative;
@@ -80,13 +81,6 @@ body {
 
 } 
 
-// TYPOGRAPHY
-// @font-face {
-//   font-family: linotype-vectora, sans-serif;
-//   font-weight: 800;
-//   font-style: italic;
-// }
 
-@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700,800,900');
 
 
