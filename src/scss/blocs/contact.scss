@@ -1,3 +1,20 @@
 /*
 CONTACTS
 */
+
+.contacts {
+  width: 52%;
+  height: 40px;;
+  margin: 20px auto;
+  //background: red;
+  position: sticky;
+  bottom: 0;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  & > a:active{
+    fill: var(--blue-color);
+  }
+}
