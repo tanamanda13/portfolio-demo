@@ -1,0 +1,23 @@
+/*
+Footer
+*/
+
+.footer {
+  position: relative;
+  height: 5vh;
+  text-align: right;
+  //background: var(--black-color);
+  border-top: 2px solid var(--white-color);
+
+  & p {
+    position: relative;
+    //top: 6px;
+    right: 24px;
+    margin: 6px;
+    font-family: "Raleway";
+
+    .heart {
+      color: #e31b23;
+    }
+  }
+}
