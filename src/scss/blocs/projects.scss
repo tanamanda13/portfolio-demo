@@ -3,7 +3,7 @@
   //border: 2px solid red;
   margin-top: 25px;
   
-  & > p {
+  & > h2 {
     text-align: left;
     background: var(--white-color);
     padding: 22px;
@@ -52,4 +52,77 @@
 
     height: 200px;
   }
+}
+
+
+/*
+Projects cards
+*/
+
+.project {
+  padding: 4px;
+  line-height: 1.2em;
+}
+
+.project__title {
+  font-family: "Vectora LH";
+  
+  //background: red;
+  
+  padding-bottom: 6px;
+  margin-bottom: 6px;
+  border-bottom: solid red;
+  //border-right: solid var(--black-color);
+  
+  & > span {
+    font-family: "Raleway";
+  }
+
+}
+
+.project__description {
+  font-family: "Raleway";
+  border-bottom: 2px blue;
+  //float: left;
+  //border-right: solid var(--black-color);
+  padding-right: 4px;
+  
+  
+}
+
+.project__description--more {
+  font-family: "Raleway";
+  font-size: 14px;
+}
+
+.skillsUsed__grid {
+  position: relative;
+  display: grid;
+  grid-gap: 4px;
+  grid-template-columns: 6px minmax(max-content, 1fr) 6px minmax(max-content, 1fr) 6px minmax(max-content, 1fr) ;
+  background: yellow;
+
+  margin: 0 10px;
+
+  & > .skillUsed {
+    background-color: red;
+    position: relative;
+
+  }
+
+  // .skillUsed--html::before {
+  //   content:'';
+  //   position: absolute;
+  //   width: 8px;
+  //   height: 8px;
+  //   background: black;
+  // }
+
+   & > .skillColor {
+      //position: absolute;
+      width: 20px;
+      //height: auto;
+      background: black;
+      //border-radius: 50%;
+    }
 }
