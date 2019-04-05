@@ -44,13 +44,13 @@
   width: 80%;
   margin: 0 auto;
   display: grid;
-  grid-gap: 20px;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   
   & > .project {
     background-color: #fff;
 
-    height: 200px;
+    height: 260px;
   }
 }
 
@@ -62,15 +62,15 @@ Projects cards
 .project {
   padding: 4px;
   line-height: 1.2em;
+  // display: flex;
+  //     flex-direction: column;
+  //     align-items: center;
 }
 
 .project__title {
   font-family: "Vectora LH";
-  
-  //background: red;
-  
-  padding-bottom: 6px;
-  margin-bottom: 6px;
+  padding-bottom: 8px;
+  margin-bottom: 10px;
   border-bottom: solid red;
   //border-right: solid var(--black-color);
   
@@ -83,46 +83,84 @@ Projects cards
 .project__description {
   font-family: "Raleway";
   border-bottom: 2px blue;
-  //float: left;
-  //border-right: solid var(--black-color);
-  padding-right: 4px;
-  
-  
+  margin-top: 8px;
 }
 
 .project__description--more {
   font-family: "Raleway";
   font-size: 14px;
+  margin-top: 6px;
 }
 
 .skillsUsed__grid {
   position: relative;
+  top: 12px;
   display: grid;
-  grid-gap: 4px;
-  grid-template-columns: 6px minmax(max-content, 1fr) 6px minmax(max-content, 1fr) 6px minmax(max-content, 1fr) ;
-  background: yellow;
+  column-gap: 4px;
+  row-gap: 8px;
+  grid-template-columns: 12px minmax(max-content, 1fr) 12px minmax(max-content, 1fr) 12px minmax(max-content, 1fr) ;
+  margin: 10px 0;
 
-  margin: 0 10px;
+  font-family: "Raleway";
 
   & > .skillUsed {
-    background-color: red;
     position: relative;
 
   }
 
-  // .skillUsed--html::before {
-  //   content:'';
-  //   position: absolute;
-  //   width: 8px;
-  //   height: 8px;
-  //   background: black;
-  // }
 
-   & > .skillColor {
-      //position: absolute;
-      width: 20px;
-      //height: auto;
-      background: black;
-      //border-radius: 50%;
-    }
+  & > .skillColor {
+    //position: absolute;
+    position: relative;
+    width: 12px;
+    height: 12px;
+    background: black;
+    //border-radius: 50%;
+    border-radius: 50%;
+    // display: grid;
+    // align-items: center;
+    top: 3px;
+  
+  }
+
+  .skillColor--html {
+    background: rgb(255, 115, 0);
+  }
+  .skillColor--css {
+    background: rgb(13, 107, 248);
+  }
+  .skillColor--js {
+    background: rgb(67, 235, 89);
+  }
+  .skillColor--teamwork {
+    background: rgb(132, 3, 218);
+  }
+  .skillColor--spe {
+    background: rgb(206, 206, 206);
+  }
+  
+ 
+
+}
+
+.project__site {
+  position: relative;
+  top: 32px;
+  //margin: 0 auto;
+  //background: red;
+  //text-align: center;
+  //margin: 21px auto 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  //padding: 10px 20px;
+  //top: 50%; 
+  //left: 70px; /* à 50%/50% du parent référent */
+  //transform: translate(-50%, 0%);
+  & > p {
+    border: 2px solid var(--blue-color);
+    padding: 10px 20px;
+    font-family: "Raleway";
+  }
+  
 }
