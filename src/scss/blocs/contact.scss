@@ -6,13 +6,15 @@ CONTACTS
   width: 52%;
   height: 40px;;
   margin: 20px auto;
-  //background: red;
   position: sticky;
   bottom: 0;
 
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  // background: var(--black-color);
+  // fill: var(--white-color);
 
   & > a:active{
     fill: var(--blue-color);

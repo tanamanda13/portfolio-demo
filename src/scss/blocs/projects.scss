@@ -99,9 +99,11 @@ Projects cards
   column-gap: 4px;
   row-gap: 8px;
   grid-template-columns: 12px minmax(max-content, 1fr) 12px minmax(max-content, 1fr) 12px minmax(max-content, 1fr) ;
+  //grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)) ;
   margin: 10px 0;
 
   font-family: "Raleway";
+  font-size: 14px;
 
   & > .skillUsed {
     position: relative;
@@ -132,11 +134,14 @@ Projects cards
   .skillColor--js {
     background: rgb(67, 235, 89);
   }
-  .skillColor--teamwork {
+  .skillColor--figma {
     background: rgb(132, 3, 218);
   }
   .skillColor--spe {
     background: rgb(206, 206, 206);
+  }
+  .skillColor--ux {
+    background: rgb(255, 75, 210);
   }
   
  
@@ -146,6 +151,7 @@ Projects cards
 .project__site {
   position: relative;
   top: 32px;
+  //left: 65px;
   //margin: 0 auto;
   //background: red;
   //text-align: center;
@@ -157,7 +163,8 @@ Projects cards
   //top: 50%; 
   //left: 70px; /* à 50%/50% du parent référent */
   //transform: translate(-50%, 0%);
-  & > p {
+  & > a {
+    text-decoration: none;
     border: 2px solid var(--blue-color);
     padding: 10px 20px;
     font-family: "Raleway";
