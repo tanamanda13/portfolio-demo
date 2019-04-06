@@ -12,6 +12,12 @@
   //height: 100vh;
   //height: 400px;
   padding: 0;
+
+  @media (min-width: 675px) {
+    position: absolute;
+    top:-60px;
+    right: 40px;
+  }
   
 }
 
@@ -35,6 +41,11 @@
 .aboutMe__text {
   display: none;
   position: relative;
+
+  @media (min-width: 675px){
+    transition: transform 2s ease-in-out;
+
+  }
 
 
 }
@@ -64,9 +75,26 @@
     border: 2px solid var(--white-color);
     padding: 10px 20px;
     font-family: "Raleway";
+
+    @media (min-width: 675px) {
+      position: absolute;
+      //bottom: 0px;
+      top: 600px;
+      left: 35%;
+      width: 100px;
+      height: 30px;
+    }
+    
   }
 
-  
+  @media (min-width: 675px){
+    display: flex;
+  justify-content: center;
+  align-items: center;
+    top:-130px;
+    width: 200%;
+    transform: translateX(-20px);
+  }
 }
 
 // .cross__aboutMe {

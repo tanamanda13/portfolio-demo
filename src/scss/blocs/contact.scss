@@ -16,7 +16,36 @@ CONTACTS
   // background: var(--black-color);
   // fill: var(--white-color);
 
+
+  @media (min-width: 675px) {
+    //position: fixed;
+    position: fixed;
+    height: 100px;
+    width: 80px;
+    top: 470px;
+    //height: 20vh;
+    // bottom: 300px;
+    // right: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+   // height: 50px;
+   // display: block;
+    //top: 500px;
+    //right: 0;
+    //flex-direction: column;
+    //justify-content: flex-start;
+    //align-self: flex-start;
+    //border: 1px solid red;
+
+    & > a {
+      margin: 20px;
+    }
+  }
+
   & > a:active{
     fill: var(--blue-color);
   }
+
+
 }
