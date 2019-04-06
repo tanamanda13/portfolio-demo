@@ -2,6 +2,7 @@
 Fonts
 */
 
+//Doesn' work
 @mixin vectora_title {
   font-family: Vectora LH;
   font-style: normal;
@@ -10,3 +11,12 @@ Fonts
   //font-size: 30px;
   //text-align: right;
 }
+
+
+// Media query
+
+// @mixin bigMobile {
+//   @media (min-width: 420px) {
+//     @content;
+//   }
+// }
